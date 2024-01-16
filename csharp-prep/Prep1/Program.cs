@@ -11,11 +11,11 @@ class Program
         //this is the line that will they will inpute
         string firstname = Console.ReadLine();
         //reapeate the other lines for the last name
-        Console.WriteLine("What is your lastname?");
+        Console.Write("What is your lastname?");
         string lastname = Console.ReadLine();
         
         //this line will be displayed on the console with their lastname,firstname,lastname
-        Console.WriteLine("your name is " + lastname + "," + firstname + "," + lastname);
+        Console.WriteLine("your name is " + lastname + "," + firstname +" "+ lastname);
 
 
     
