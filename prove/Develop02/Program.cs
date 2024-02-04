@@ -38,13 +38,16 @@ while (userChoice != "5")
             }
             break;
         case "3":
-            string fileSave = "journal.txt";
-            string[] lines = System.IO.File.ReadAllLines(fileSave);
-
-            foreach (string line in lines)
+            public static List<Entry> LoadFromFile()
             {
-                string[] parts = line.Split("|");
+                string fileSave = "journal.txt";
+                string[] lines = System.IO.File.ReadAllLines(fileSave);
 
+                foreach (string line in lines)
+                {
+                    string[] parts = line.Split("|");
+
+                }
             }
             break;
         case "4":
