@@ -48,6 +48,7 @@ while (userChoice != "5")
                     string[] parts = line.Split("|");
 
                 }
+                return entries;
             }
             break;
         case "4":
