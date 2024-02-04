@@ -55,7 +55,7 @@ while (userChoice != "5")
                 {
                     foreach (Entry singleEntry in entries)
                     {
-                        outputFile.WriteLine($"{singleEntry._entryDate} | {singleEntry._prompt} | {singleEntry._response});
+                        outputFile.WriteLine($"{singleEntry._entryDate} | {singleEntry._prompt} | {singleEntry._response}");
                     }
                 }
             }
