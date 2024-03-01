@@ -1,0 +1,17 @@
+* method = function
+* variable 
+    - local variables (not global, not member variables); exist in functions
+    - member variables (global variables which belong to the entire class,
+    and can be used anywhere in the entire class, in any function).
+    Synonyms include "attribute" and "property".
+        * can be private, protected, or public. 
+            - private variables are still
+            accessible anywhere within the same class, but inaccessible to outside
+            classes i.e. program to mindfulness.
+            - protected variables are accessible anywhere in the same class,
+            or children classes (inheritance)
+            - public variables are accessbile anwhere in the same class, and 
+            to all other classes.
+* classes and objects
+    - class is a blueprint
+    - object is an instance of a blueprint
