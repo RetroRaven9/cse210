@@ -1,5 +1,8 @@
 public class LoadGoals
 {
-    public void LoadGoals();
+    public void LoadGoals()
+    {
+        string
+    }
 
 }

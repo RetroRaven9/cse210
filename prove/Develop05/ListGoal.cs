@@ -5,4 +5,6 @@ public class ListGoal
     List<eternalGoal> eternalGoals = new List<eternalGoal>();
 
     List<checklistGoal> checklistGoals = new List<checklistGoal>();
+
+    
 }
