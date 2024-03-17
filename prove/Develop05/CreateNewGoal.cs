@@ -35,9 +35,13 @@ public class CreateNewGoal:Goal
                         _points = int.Parse(Console.ReadLine());
                         break;
                     case "3":
-                        checklistGoal checklistGoal = new checklistGoal();
-                        string checklistGoal = Console.ReadLine();
-                        int points = Console.ReadLine();
+                        Console.WriteLine("what is the name of your goal?");
+                        _name = Console.ReadLine();
+                        Console.WriteLine("what is the description of your goal?");
+                        _description = Console.ReadLine();
+                        Console.WriteLine("how many points do you want to give this goal?");
+                        _points = int.Parse(Console.ReadLine());
+
                         break;
                 }
             }

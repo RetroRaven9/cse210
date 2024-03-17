@@ -5,6 +5,9 @@ public class Goal{
 
     protected int _points;
     protected bool _check = false;
+
+    protected int _totalPoints = 0;
+    
     
     public void Goals(string name,string description,int points,bool check)
     {
@@ -12,6 +15,8 @@ public class Goal{
         _description = description;
         _points = points;
         _check = check;
+        _totalPoints = _totalPoints + _points;
+        
 
     }
 }

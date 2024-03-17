@@ -17,29 +17,32 @@ class Program
             switch (input)
             {
                 case "1":
-                    // create new goal
+                    // Call the CreateNewGoal class to create new goal
                     CreateNewGoal createNewGoal = new CreateNewGoal();
+                    Console.WriteLine($"{createNewGoal}");
                     break;
                 case "2":
                     // list goals
-                    ListGoal listGoals = new ListGoal();
+                    
                     break;
                 case "3":
                     // save goals
-                    SaveGoals saveGoals = new SaveGoals();
+
                     break;
                 case "4":
                     // load goals
-                    LoadGoals loadGoals = new LoadGoals();
+                    
                     break;
                 case "5":
                     // record events
+
                     break;
                 case "6":
                     // quit
+                    Console.WriteLine("Goodbye");
                     break;
+            
             }
-        Console.WriteLine("Goodbye");
     }
 }
 
