@@ -1,4 +1,5 @@
 public class Lecture
+
 {
     
     protected string _speaker;

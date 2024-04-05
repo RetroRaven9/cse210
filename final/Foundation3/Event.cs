@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 public class Event
 {
     protected string _title;
@@ -16,6 +18,12 @@ public class Event
         _address = address;
 
     }
+
+    public string GetStandardDetails()
+    {
+        return $"{_date}({_time}) {_title}({_address})";
+    } 
+
 
 
 }
