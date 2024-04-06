@@ -1,10 +1,15 @@
-public class Reception
+public class Reception : Event
 {
-    protected string _email;
-    protected bool _rsvp;
-    public Reception(string email, bool rsvp)
+    private string _rsvpEmail;
+
+    public Reception(string title, string description, DateTime date, TimeSpan time, Address address, string rsvpEmail)
+        : base(title, description, date, time, address)
     {
-        _email = email;
-        _rsvp = rsvp;
+        _rsvpEmail = rsvpEmail;
+    }
+
+    public override string GetFullDetails()
+    {
+        return $"{base.GetFullDetails()}\nType: Reception\nRSVP Email: {_rsvpEmail}";
     }
 }

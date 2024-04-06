@@ -1,20 +1,38 @@
 public class Activity
 {
     protected string _name;
-    protected int _length;
-    protected int _time;
+    protected DateTime _date;
+    protected int _length; // in minutes
 
-    protected int _distance;
-
-    public void acrtivity(string name, int length, int time,int distance)
+    public Activity(string name, DateTime date, int length)
     {
         _name = name;
+        _date = date;
         _length = length;
-        _time = time;
-        _distance = _length * _time;
-        _distance = distance
     }
 
+    public virtual double GetDistance()
+    {
+        // Default implementation for activities without distance calculation
+        return 0;
+    }
 
+    public virtual double GetSpeed()
+    {
+        // Default implementation for activities without speed calculation
+        return 0;
+    }
+
+    public virtual double GetPace()
+    {
+        // Default implementation for activities without pace calculation
+        return 0;
+    }
+
+    public virtual string GetSummary()
+    {
+        // Default implementation for summary
+        return $"{_date.ToString("dd MMM yyyy")} {_name} ({_length} min)";
+    }
 }
     
